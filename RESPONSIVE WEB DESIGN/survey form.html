@@ -1,0 +1,100 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">User Feedback Survey</h1>
+    <p id="description">We value your feedback! Please fill out the form below.</p>
+  </header>
+
+  <main>
+    <form id="survey-form">
+      <!-- Name Field -->
+      <div class="form-group">
+        <label id="name-label" for="name">Name:</label>
+        <input 
+          type="text" 
+          id="name" 
+          name="name" 
+          placeholder="Enter your name" 
+          required>
+      </div>
+
+      <!-- Email Field -->
+      <div class="form-group">
+        <label id="email-label" for="email">Email:</label>
+        <input 
+          type="email" 
+          id="email" 
+          name="email" 
+          placeholder="Enter your email" 
+          required>
+      </div>
+
+      <!-- Number Field -->
+      <div class="form-group">
+        <label id="number-label" for="number">Age:</label>
+        <input 
+          type="number" 
+          id="number" 
+          name="age" 
+          placeholder="Enter your age" 
+          min="10" 
+          max="100" 
+          required>
+      </div>
+
+      <!-- Dropdown Field -->
+      <div class="form-group">
+        <label for="dropdown">What is your favorite genre?</label>
+        <select id="dropdown" name="genre">
+          <option value="fiction">Fiction</option>
+          <option value="non-fiction">Non-Fiction</option>
+          <option value="fantasy">Fantasy</option>
+        </select>
+      </div>
+
+      <!-- Radio Buttons -->
+      <div class="form-group">
+        <p>Would you recommend this form to others?</p>
+        <label><input type="radio" name="recommend" value="yes" required> Yes</label>
+        <label><input type="radio" name="recommend" value="no"> No</label>
+      </div>
+
+      <!-- Checkboxes -->
+      <div class="form-group">
+        <p>What features did you like? (Select all that apply)</p>
+        <label><input type="checkbox" name="features" value="design"> Design</label>
+        <label><input type="checkbox" name="features" value="usability"> Usability</label>
+        <label><input type="checkbox" name="features" value="speed"> Speed</label>
+      </div>
+
+      <!-- Textarea -->
+      <div class="form-group">
+        <label for="comments">Any additional comments?</label>
+        <textarea id="comments" name="comments" placeholder="Write your comments here"></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+
+
+** end of undefined **
+

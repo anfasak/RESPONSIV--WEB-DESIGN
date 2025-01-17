@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <style>
+        /* Ensure the navbar is always at the top */
+        #nav-bar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        #nav-bar a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+
+        #nav-bar a:hover {
+            background-color: #555;
+        }
+
+        /* Main content styling */
+        main {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        /* Use Flexbox for feature section */
+        .feature-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .feature {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            flex: 1;
+            min-width: 200px;
+        }
+
+        iframe {
+            width: 80%;
+            height: 300px;
+            margin: 20px auto;
+        }
+
+        /* Add Flexbox to footer for layout */
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Media Query for responsiveness */
+        @media (max-width: 600px) {
+            #nav-bar {
+                flex-direction: column; /* Navbar items stack vertically */
+            }
+
+            .feature-container {
+                flex-direction: column; /* Features stack vertically */
+            }
+
+            .feature {
+                margin: 10px 0; /* Space between features */
+            }
+
+            iframe {
+                width: 100%;
+            }
+
+            body {
+                background-color: #f0f8ff; /* Background color for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <img id="header-img" src="logo.png" alt="Product Logo" width="100">
+        <nav id="nav-bar">
+            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" href="#video-section">Video</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Features Section -->
+        <section id="features">
+            <h2>Product Features</h2>
+            <div class="feature-container">
+                <div class="feature">Feature 1</div>
+                <div class="feature">Feature 2</div>
+                <div class="feature">Feature 3</div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section id="video-section">
+            <h2>Watch Our Product Video</h2>
+            <iframe id="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                title="Product Video" frameborder="0" allowfullscreen></iframe>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <input type="submit" id="submit" value="Subscribe">
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Your Product Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>

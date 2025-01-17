@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tribute Page</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    header, section, footer {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* Title Styles */
+    h1#title {
+      color: #4caf50;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    /* Image Section */
+    #img-div {
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    #image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      display: block; /* Ensures the image behaves like a block element */
+      margin: 0 auto; /* Centers the image horizontally */
+    }
+
+    #img-caption {
+      font-style: italic;
+      color: #666;
+      margin-top: 10px;
+    }
+
+    /* Tribute Info Section */
+    #tribute-info {
+      text-align: left;
+      padding: 10px 20px;
+      font-size: 1.1em;
+      line-height: 1.8;
+    }
+
+    /* Footer Link */
+    #tribute-link {
+      display: inline-block;
+      color: white;
+      background-color: #4caf50;
+      padding: 10px 15px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    #tribute-link:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <main id="main">
+    <header>
+      <h1 id="title">Nikola Tesla: The Visionary Inventor</h1>
+    </header>
+
+    <figure id="img-div">
+      <img 
+        id="image" 
+        src="https://upload.wikimedia.org/wikipedia/commons/d/d4/N.Tesla.JPG" 
+        alt="Nikola Tesla Portrait">
+      <figcaption id="img-caption">Nikola Tesla, circa 1890</figcaption>
+    </figure>
+
+    <section id="tribute-info">
+      <p>
+        Nikola Tesla (1856–1943) was a Serbian-American inventor, engineer, and physicist. 
+        He is best known for his contributions to the development of alternating current (AC) electricity, 
+        wireless communication, and numerous other groundbreaking technologies.
+      </p>
+      <p>
+        Tesla's visionary ideas laid the foundation for modern power distribution, radio technology, 
+        and even early concepts for wireless energy transmission. Despite facing financial difficulties 
+        throughout his life, his legacy lives on as one of the greatest minds in scientific history.
+      </p>
+    </section>
+
+    <footer>
+      <a 
+        id="tribute-link" 
+        href="https://en.wikipedia.org/wiki/Nikola_Tesla" 
+        target="_blank">
+        Learn more about Nikola Tesla on Wikipedia
+      </a>
+    </footer>
+  </main>
+</body>
+</html>
